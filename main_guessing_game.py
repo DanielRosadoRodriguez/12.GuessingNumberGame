@@ -1,10 +1,13 @@
+# imports
 from domain import print_wellcome as pw
 from domain import pick_number as pn
 from domain import get_difficulty as gd
 
-
+# print the wellcome to the user
 pw.print_wellcome()
+# generate the random number the user will guess
 number = pn.pick_number()
 
+# lets the user pick a difficulty level and sets the user lives for the game
 user_lives = gd.get_difficulty()
 print(f"You have {user_lives} lives!")
