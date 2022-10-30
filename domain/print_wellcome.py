@@ -10,4 +10,6 @@ game_logo = '''
  `-----'      `-----' `--'   `--'  `------'      `--'  `--'   `-----'    `--'   `--' `------' `------'`--' '--' 
 '''
 
-
+def print_wellcome():
+    print(game_logo)
+    print("Wellcome to Number Guessing game")
