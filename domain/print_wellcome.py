@@ -12,6 +12,10 @@ game_logo = '''
 
 '''
 
+
 def print_wellcome():
+    """
+    Function that prints the wellcome to the program
+    """
     print(game_logo)
     print("Wellcome to Number Guessing game")
