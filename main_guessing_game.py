@@ -17,6 +17,6 @@ while True:
     print(f"You have {user_lives} lives!")
     gc.game_core(lives=user_lives, machine_number=number)
     play_again = input("Do you want to play again? y/n\n").lower()
-    if play_again == "n":
+    if play_again != "y":
         print("See you soon!")
         break
