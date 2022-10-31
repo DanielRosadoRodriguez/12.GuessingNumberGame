@@ -29,18 +29,18 @@ def game_core(lives, machine_number):
     """
 
     while True:
-        user_guess = get_user_guess()
-        if user_guess == machine_number:
-            print("You Win!")
-            break
-        else:
-            if lives > 0:
+        if lives > 0:
+            user_guess = get_user_guess()
+            if user_guess == machine_number:
+                print("You Win!")
+                break
+            else:
                 lives -= 1
                 if user_guess > machine_number:
                     print("Too High!")
                 elif user_guess < machine_number:
                     print("Too Low!")
                 print(f"You have {lives} remaining")
-            else:
-                print("You Lose")
-                break
+        else:
+            print("You Lose")
+            break
