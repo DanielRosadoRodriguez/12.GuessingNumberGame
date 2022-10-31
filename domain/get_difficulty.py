@@ -5,7 +5,7 @@ def get_difficulty():
     :return: lives
     """
     while True:
-        difficulty = input("Insert which difficulty level you want: easy or hard?\n")
+        difficulty = input("Insert which difficulty level you want: easy or hard?\n").lower()
         if difficulty == "easy":
             lives = 10
             break
